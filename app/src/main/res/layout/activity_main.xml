@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/tempLabel"
+        android:text="@string/temp_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/temp_val"
+        android:id="@+id/tempVal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/humLabel"
+        android:text="@string/hum_label"
+        android:layout_below="@id/tempLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="25dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/humValue"
+        android:text="@string/hum_val"
+        android:layout_alignEnd="@id/tempVal"
+        android:layout_alignTop="@id/humLabel"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateLbl"
+        android:text="@string/date_label"
+        android:layout_below="@id/humLabel"
+        android:layout_alignStart="@id/humLabel"
+        android:layout_marginTop="25dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:text="@string/date_val"
+        android:layout_alignEnd="@id/humValue"
+        android:layout_alignTop="@id/dateLbl"/>
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/swToggle"
+        android:layout_alignEnd="@id/humValue"
+        android:layout_below="@id/date"
+        android:layout_marginTop="25dp"/>
+    <TextView
+        android:id="@+id/lblEnable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On/Off:"
+        android:layout_below="@id/dateLbl"
+        android:layout_alignTop="@id/swToggle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblNotifications"
+        android:text="Bildirimler:"
+        android:layout_below="@id/lblEnable"
+        android:layout_marginTop="25dp"
+        />
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/swNotif"
+        android:layout_below="@id/swToggle"
+        android:layout_alignTop="@id/lblNotifications"
+        android:layout_alignEnd="@id/swToggle"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/realDate"
+        android:text="@string/date_val"
+        android:layout_alignEnd="@id/date"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/swNotif"/>
+
+
+
+</RelativeLayout>

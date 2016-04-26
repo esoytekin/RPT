@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">Dumankaya Minimal A5-1</string>
+    <string name="action_refresh">Yenile</string>
+    <string name="temp_label">Sicaklik:</string>
+    <string name="hum_label">Nem:</string>
+    <string name="temp_val">[Sicaklik yukleniyor..]</string>
+    <string name="hum_val">[Nem orani Yukleniyor..]</string>
+    <string name="date_label">Son Guncelleme:</string>
+    <string name="date_val">[Lutfen bekleyiniz..]</string>
+    <string name="toggle_label">On-Off:</string>
+</resources>
